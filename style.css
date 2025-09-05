@@ -1,78 +1,4 @@
-
-/* For mobile (max-width: 768px) */
-@media (max-width: 768px) {
-  .top-bar {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-    font-size: 13px;
-  }
-
-  .services {
-    padding: 40px 20px;
-  }
-
-  .services h1 {
-    font-size: 28px;
-  }
-
-  .cta {
-    padding: 40px 20px;
-  }
-
-  .cta-content h2 {
-    font-size: 24px;
-  }
-
-  .cta-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  footer .footer-top {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .newsletter input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
-/* For very small phones (max-width: 480px) */
-@media (max-width: 480px) {
-  nav {
-    padding: 10px;
-  }
-
-  .menu li {
-    margin: 5px 10px;
-  }
-
-  .btn {
-    padding: 8px 14px;
-    font-size: 14px;
-  }
-
-  .services h1 {
-    font-size: 22px;
-  }
-
-  .cta-content h2 {
-    font-size: 20px;
-  }
-
-  .footer-logo h3 {
-    font-size: 20px;
-  }
-    .footer-menu h4, .newsletter h4 {
-        font-size: 16px;
-    }
-}
-/* ================= GLOBAL STYLES ================= */
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -309,7 +235,7 @@ footer {
 .email-icon {
   width: 24px;
   height: 24px;
-  color: #0073e6;
+  color: #0073e6; 
 }
 .phone-row {
   display: inline-flex;
@@ -372,4 +298,83 @@ footer {
     height: 20px;
     object-fit: cover;
     vertical-align: middle;
+}  
+
+/* =====================
+   Mobile Responsive Styles
+   ===================== */
+@media (max-width: 600px) {
+  /* Top bar */
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .menu li {
+    margin: 0;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Services section */
+  .services {
+    padding: 40px 20px;
+  }
+  .services h1 {
+    font-size: 28px;
+  }
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Call to Action */
+  .cta {
+    padding: 40px 20px;
+  }
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .cta-content img {
+    max-width: 100%;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr;
+    padding: 0 20px 20px;
+    text-align: center;
+  }
+  .footer-logo,
+  .footer-menu,
+  .newsletter {
+    margin-bottom: 20px;
+  }
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .newsletter button {
+    width: 100%;
+  }
 }
