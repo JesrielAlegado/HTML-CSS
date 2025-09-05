@@ -1,4 +1,78 @@
-* {
+
+/* For mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .services {
+    padding: 40px 20px;
+  }
+
+  .services h1 {
+    font-size: 28px;
+  }
+
+  .cta {
+    padding: 40px 20px;
+  }
+
+  .cta-content h2 {
+    font-size: 24px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .footer-top {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* For very small phones (max-width: 480px) */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  .menu li {
+    margin: 5px 10px;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .services h1 {
+    font-size: 22px;
+  }
+
+  .cta-content h2 {
+    font-size: 20px;
+  }
+
+  .footer-logo h3 {
+    font-size: 20px;
+  }
+    .footer-menu h4, .newsletter h4 {
+        font-size: 16px;
+    }
+}
+/* ================= GLOBAL STYLES ================= */
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,7 +110,7 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px; /* space between image and text */
+  gap: 8px; 
   font-size: 24px;
   font-weight: bold;
   color: #007bff;
@@ -48,7 +122,7 @@ nav {
     color: #007bff;
 }
 .logo-img {
-  width: 40px; /* adjust logo size */
+  width: 40px; 
   height: auto;
 }
 .menu {
@@ -156,13 +230,13 @@ nav {
 h3 {
   display: flex;
   align-items: center;
-  gap: 8px; /* space between image and text */
+  gap: 8px;
   font-size: 24px;
   font-weight: bold;
 }
 
 .logo-img {
-  width: 32px;  /* adjust to your preferred size */
+  width: 32px;
   height: auto;
 }
 footer {
@@ -228,14 +302,14 @@ footer {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: inherit; /* makes icon/text use current text color */
+  color: inherit;
   font-family: Arial, sans-serif;
   font-size: 16px;
 }
 .email-icon {
   width: 24px;
   height: 24px;
-  color: #0073e6; /* blue for email icon */
+  color: #0073e6;
 }
 .phone-row {
   display: inline-flex;
